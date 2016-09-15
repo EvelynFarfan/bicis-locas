@@ -1,8 +1,8 @@
 function validateForm(){
 	var nom = document.getElementById("name").value;
-  var contr = document.getElementById("input-password").value;
+	var contr = document.getElementById("input-password").value;
 	var apellido = document.getElementById("lastname").value;
-  var cor = document.getElementById("input-email").value;
+	var cor = document.getElementById("input-email").value;
 	var opcion = document.querySelector("select").value;
 
 	if (nom.length == 0 && apellido == 0 && cor == 0 && contr == 0) {
@@ -19,12 +19,12 @@ function validateForm(){
 		  alert("Escribe tu apellido.");
 		}else if ( /[0-9]/.test(apellido)){
 			alert("No ingrese números.")
-		}else if ( /^[a-z]/.test(apellido.charAt(0)) ){
+		}else if ( /^[a-z]/.test(apellido.charAt(0))){
 			alert ("Escriba el primer caracter de su apellido en mayúscula.")
 		}
 		var emailRegex=/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 	    if(!emailRegex.test(cor)) {
-	      alert("Ingrese un correo válido.");
+	    alert("Ingrese un correo válido.");
 	    };
 	    if(contr == null || contr.length == 0){
 	    	alert("Ingresa tu contraseña")
