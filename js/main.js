@@ -25,12 +25,11 @@ function validateForm(){
     
   var contr = document.getElementById("input-password").value;
   if (contr.length <= 6 || contr.length == 0 || contr == "123456" || contr == "98754" || contr == "password" ) {
-		alert("Contraseña no válida.");
-		return false; 
+		alert("Contraseña no válida."); 
 	}
 	
-	var opcion = document.getElementsByClassName("form-control").selectedIndex;
-	if( opcion == null || opcion == "" ) {
+	var opcion = document.querySelector("select").value;
+	if( opcion == 0) {
 		alert("Por favor, seleccione una opción en checkbox.");
 	}
 
