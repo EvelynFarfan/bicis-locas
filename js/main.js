@@ -29,7 +29,7 @@ function validateForm(){
 		return false; 
 	}
 	
-	var opcion = document.getElementById("checkbox").selectedIndex;
+	var opcion = document.getElementsByClassName("form-control").selectedIndex;
 	if( opcion == null || opcion == "" ) {
 		alert("Por favor, seleccione una opción en checkbox.");
 	}
